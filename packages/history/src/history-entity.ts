@@ -8,7 +8,7 @@ export function HistoryActionColumn(column?: ColumnOptions): PropertyDecorator {
     Column({
       default: HistoryActionType.CREATED,
       enum: Object.values(HistoryActionType),
-      type: "enum",
+      type: "varchar",
       ...column,
     })(target, propertyKey);
   };
